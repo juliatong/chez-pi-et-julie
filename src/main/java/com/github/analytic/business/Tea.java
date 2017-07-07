@@ -1,7 +1,4 @@
 package com.github.analytic.business;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class Tea {
  private String Name;
