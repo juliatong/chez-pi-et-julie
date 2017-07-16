@@ -1,0 +1,5 @@
+Running the installer with escalated permissions should do the trick - Right-click and "Run As Administrator", or set to run as admin in the Properties window under the Compatibility tab.
+ 
+If this doesn't work, then it may be spinning off a separate process that is losing the permission escalation; in that case, you'll want to just disable UAC temporarily (Control Panel -> User Accounts -> Change User Account Control settings).
+
+http://www.cnblogs.com/wuyuegb2312/p/3872607.html
