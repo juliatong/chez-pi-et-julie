@@ -145,14 +145,31 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- msyql connector -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<!-- 	 <dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.7-dmr</version>
+		</dependency> -->
+		 
 	</dependencies>
 
 	<repositories>
-		<repository>
+	<!-- 	<repository>
 			<id>springsource-milestones</id>
 			<name>SpringSource Milestones Proxy</name>
 			<url>https://oss.sonatype.org/content/repositories/springsource-milestones</url>
-		</repository>
+		</repository> -->
+		 
+		 <!--aliyun repository-->
+        <repository>
+            <id>aliyunmaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+  
+		
 	</repositories>
 
 	<build>
@@ -167,10 +184,16 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.4.6-SNAPSHOT</version>
+			</plugin> -->
+			
+			<plugin>
+			  <groupId>org.eclipse.jetty</groupId>
+			  <artifactId>jetty-maven-plugin</artifactId>
+			  <version>9.4.6.v20170531</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
