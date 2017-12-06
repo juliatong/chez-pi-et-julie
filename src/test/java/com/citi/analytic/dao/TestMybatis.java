@@ -15,7 +15,7 @@ public class TestMybatis {
 		ApplicationContext context=new ClassPathXmlApplicationContext("mybatis/mybatis-generic-dao.xml");
 		MybatisGenericDao<Entity, Criteria> mybatisDao=(MybatisGenericDao)context.getBean("mybatisGenericDao");
 		User instance=new User();
-	//8889999	instance.setUserId("111");
+	//88899969	instance.setUserId("111");
 		instance.setAddress("aa");
 		instance.setEmail("###");
 		instance.setFirstname("jj");
